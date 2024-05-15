@@ -1,0 +1,11 @@
+###Anlaizar pokemons
+GET http://localhost:8080/pokemon/chansey
+
+###Ver mi team
+GET http://localhost:8080/pokemon
+
+###Add al team
+POST http://localhost:8080/pokemon/charmander
+
+###Liberar pokemon
+DELETE http://localhost:8080/pokemon/2
