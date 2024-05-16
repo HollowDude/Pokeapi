@@ -52,14 +52,6 @@ func SearchByName(c *gin.Context) {
 }
 
 func DelFromTeam(c *gin.Context) {
-	/*var id, error = strconv.Atoi(c.Param("id"))
-	if error != nil {
-		c.JSON(http.StatusNotFound, gin.H{
-			"message": "Bad data",
-		})
-		return
-	}*/
-
 	err := models.DelIt(c.Param("id"))
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Record not found!"})

@@ -13,7 +13,7 @@ func ShowIt() (team Poke) {
 
 func AddIt(input Poke, c *gin.Context) (poke Poke, error error) {
 
-	poke = Poke{Name: input.Name}
+	poke = Poke{Name: input.Name, Type: input.Type, Sprites: input.Sprites}
 
 	initializers.DB.Create(&poke)
 
